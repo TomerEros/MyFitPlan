@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחולל תוכניות - MyFitPlan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="menu-left">
+            <a href="index.html">דף הבית</a>
+            <a href="login.html">התחברות</a>
+            <a href="signup.html">הרשמה</a>
+        </nav>
+        <div class="logo">My-Fit-Plan</div>
+    </header>
+
+    <main>
+        <div class="generator-wizard">
+            <h2>בניית תוכנית אימונים</h2>
+            <form action="/generate-plan" method="POST"> <div class="step">
+                    <label for="goal">מה המטרה המרכזית שלך?</label>
+                    <select id="goal" name="goal">
+                        <option value="gain">עלייה במסת שריר</option>
+                        <option value="loss">ירידה במשקל</option>
+                        <option value="fitness">כושר כללי</option>
+                    </select>
+                </div>
+
+                <div class="step">
+                    <label for="equipment">איזה ציוד זמין לך?</label>
+                    <select id="equipment" name="equipment">
+                        <option value="gym">חדר כושר מלא</option>
+                        <option value="home">בית (משקולות בלבד)</option>
+                        <option value="none">ללא ציוד</option>
+                    </select>
+                </div>
+
+                <div class="step">
+                    <label for="frequency">כמה ימי אימון בשבוע?</label>
+                    <select id="frequency" name="frequency">
+                        <option value="2">2 ימים</option>
+                        <option value="3">3 ימים</option>
+                        <option value="4">4 ימים</option>
+                    </select>
+                </div>
+
+                <div class="step">
+                    <label for="experience">מה רמת הניסיון שלך?</label>
+                    <select id="experience" name="experience">
+                        <option value="beginner">מתחיל</option>
+                        <option value="intermediate">בינוני</option>
+                        <option value="advanced">מתקדם</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-button">צור את התוכנית שלי!</button> </form>
+        </div>
+    </main>
+
+</body>
+</html>
